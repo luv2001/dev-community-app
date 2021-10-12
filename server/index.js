@@ -21,7 +21,7 @@ mongoose
   .connect(DATABASE_URL)
   .then(() => {
     app.listen(PORT, () =>
-      console.log(`Server Running on Port: http://localhost:${PORT}`)
+      console.log(`Server Running on Port: http://localhost:${PORT}/posts`)
     );
   })
   .catch((error) => {
